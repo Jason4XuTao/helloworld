@@ -9,7 +9,6 @@ node {
             sudo npm config set registry http://registry.npmjs.org/  
             sudo npm cache clean --force
             sudo npm install -g npm@latest
-            sudo npm get registry
             sudo npm install --registry=http://registry.npmjs.org/
         '''
 //        sh 'npm install'
