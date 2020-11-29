@@ -5,7 +5,10 @@ node {
         checkout scm
 
    stage 'Setup'
-        sh 'npm install'
+        sh '''
+            npm install --registry=https://registry.foo.bar.com
+        '''
+#        sh 'npm install'
 
    stage 'Mocha test'
         sh './node_modules/mocha/bin/mocha'
