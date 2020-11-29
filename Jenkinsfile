@@ -6,6 +6,7 @@ node {
 
    stage 'Setup'
         sh '''
+            npm config set registry http://registry.npmjs.org/  
             npm cache clean --force
             npm install -g npm@latest
             npm get registry
