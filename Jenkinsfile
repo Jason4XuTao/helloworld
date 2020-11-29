@@ -6,9 +6,10 @@ node {
 
    stage 'Setup'
         sh '''
-            npm install --registry=https://registry.foo.bar.com
+            npm get registry
+            npm install --registry=http://registry.npmjs.org/
         '''
-#        sh 'npm install'
+//        sh 'npm install'
 
    stage 'Mocha test'
         sh './node_modules/mocha/bin/mocha'
