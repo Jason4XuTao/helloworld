@@ -7,7 +7,7 @@ node {
    stage 'Setup'
         sh '''
             npm get registry
-            npm install --registry=https://registry.npmjs.org/
+            npm install --registry=http://registry.npmjs.org/
         '''
 //        sh 'npm install'
 
